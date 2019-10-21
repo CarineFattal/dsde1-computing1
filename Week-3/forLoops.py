@@ -1,4 +1,4 @@
-a = 10
+a = 0
 for a in range (11):
     print (a)
    
