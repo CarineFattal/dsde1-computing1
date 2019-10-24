@@ -92,3 +92,5 @@ def value_exists(dictionary, value):
 def merge_dictionaries(dictionary1, dictionary2):
     new_dictionary = dictionary1.update(dictionary2)
     return new_dictionary
+
+

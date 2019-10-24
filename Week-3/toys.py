@@ -9,20 +9,22 @@ with functions.
 # write a function that adds 1
 # to the input and prints the result
 def inc(a):
+    a = a + 1
     print(a)
 
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
-    return # hint this is incomplete
+    a = a +1
+    return a
 
 
 # write a function that adds
 # the two input numbers together
 # and returns the sum
 def sum(a, b):
-    return
+    return a+b
 
 
 # write a function that takes two
@@ -30,7 +32,7 @@ def sum(a, b):
 # sum() and then increments the sum
 # using inc_return
 def sum_inc(a, b):
-    return
+    return 
 
 
 # write a function that returns a 
