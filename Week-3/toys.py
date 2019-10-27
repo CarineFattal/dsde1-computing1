@@ -32,14 +32,19 @@ def sum(a, b):
 # sum() and then increments the sum
 # using inc_return
 def sum_inc(a, b):
-    return 
+    answer = inc_return(sum(a, b))
+    return answer 
 
 
 # write a function that returns a 
 # boolean (True or False) for whether 
 # the input number is even
 def is_even(a):
-    return
+    if a%2 == 0:
+        return True
+    else:
+        return False
+    
 
 
 # create for loop that takes a string
@@ -51,5 +56,6 @@ def is_even(a):
 def string_repeat(phrase, repeat):
     # hint: you can add strings together 
     # in order to concatenate them
-    return
+    new_string = phrase*repeat
+    return new_string
 
