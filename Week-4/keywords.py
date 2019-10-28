@@ -14,7 +14,20 @@ with default values.
 # it returns 'Hello and welcome to <place>'
 # if both user_name and place are provided
 # it returns 'Hello, <user_name>, and welcome to <place>
+def welcome_message(*user_name, **place):
+    
+    if place and user_name:
+        return ('Hello, '+ user_name + ',' + 'and welcome to' + place)
+    elif place or user_name:
+        place = str(place)
+        return ('Hello, '+ user_name + ',' + 'and welcome to ' + place)
+    
+    else:
+        return 'Hello and welcome'
 
+    
+    
+    
 
 # Create a function called list_average()
 # without using any libraries to do the maths for you 
@@ -27,3 +40,17 @@ with default values.
 # (return list of all modes if there is a tie between multiple values)
 # if avg_type='mean', return the mean of the list
 # if avg_type='median', return the median of this list
+
+
+
+def list_average(argument1=[1,2,3], *avg_type):
+    if avg_type == 'mode':
+        for i in argument1:
+            if i == i+1:
+                return i 
+    elif avg_type == 'mean':
+        return sum(argument1)/len(argument1)
+    elif avg_type == 'median':
+        return int(sum(argument1)/len(argument1))
+    else:
+        return sum(argument1)/len(argument1)
