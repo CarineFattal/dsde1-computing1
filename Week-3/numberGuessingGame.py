@@ -1,3 +1,8 @@
+'''
+number guessing game
+
+'''
+
 guess = input ('Pick a number between 1 and 10:')
 guess = int(guess)
 import random
